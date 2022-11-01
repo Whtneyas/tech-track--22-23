@@ -24,6 +24,7 @@ MIT LICENCE
  
 
 ## Resources 
+https://www.datapine.com/blog/best-data-visualizations/
 
       
   
