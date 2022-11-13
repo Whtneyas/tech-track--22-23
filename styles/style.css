@@ -1,4 +1,18 @@
 body {
-  background: white;
+  background-color: #1B1464;
   font-family: sans-serif;
+}
+
+header h1{
+  color:white;
+  text-align: center;
+  text-decoration-line: underline;
+  position: relative;
+  top: 0.5em;
+}
+header img {
+  width: 150px;
+  position: absolute;
+  top:0.3em;
+ 
 }

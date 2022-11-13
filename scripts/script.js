@@ -1,13 +1,7 @@
-const seconds = 10;
-function getData() {
-	console.log("loading data");
-	fetch('https://www.kaggle.com/datasets/unanimad/disney-plus-shows?resource=download')
-	.then(res => res.json())
-	.then(data => {
-	})
-}
 
+	fetch("https://opensheet.elk.sh/1f5wvv49lvYW2vM40luDgN3o8nVq4xOdEHtgyKKgqr28/disney_plus_titles")
+		.then((response) => response.json())
+		.then((data) => console.log(data));
+			
 
-setInterval(getData, seconds * 1000)
-getData();
-
+	
