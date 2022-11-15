@@ -16,3 +16,56 @@ header img {
   top:0.3em;
  
 }
+
+header  label {
+  color:white;
+
+}
+
+header select option {
+  color: blue;
+}
+
+
+header form{
+  position: relative;
+  top:1.6em;
+  left:30em;
+  
+}
+
+form input[type="radio"]:checked {
+  appearance: none;
+    background-color: yellow;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+form label {
+  padding:1em;
+}
+.genre {
+  position:relative;
+  top:.5em;
+  left:58em;
+}
+
+header select {
+ position:absolute;
+ top:8em;
+ right: 5em;
+  
+}
+
+/**SLIDER **/
+.axis text,
+.slider text {
+  font-size: 18px;
+}
+
+.axis text {
+  fill: red;
+}
+.slider text {
+  fill: green;
+}
