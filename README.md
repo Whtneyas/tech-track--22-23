@@ -4,6 +4,11 @@ Project tech datavisualisatie
 
 ## Installation
 
+## Packages installed 
+*D3 - For creating interactive data visualisations in the web browser 
+*Simple Slider - A slider 
+*Gsap -For animation
+
 
 ## Cloning
  For the application to run locally i clone it by using this line of code 
