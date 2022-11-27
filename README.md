@@ -29,7 +29,15 @@ MIT LICENCE
  
 
 ## Resources 
-https://www.datapine.com/blog/best-data-visualizations/
+- https://www.datapine.com/blog/best-data-visualizations/ -examples of datavisualisation 
+- https://www.freecodecamp.org/learn/data-visualization/#data-visualization-with-d3 - data visualisation with d3 
+-  https://www.digitalocean.com/community/tutorials/js-filter-array-method - filter method
+-  https://greensock.com/get-started/ - gsap
+-  https://www.javascripttutorial.net/javascript-array-filter/ - filter
+-  https://oh-snap.netlify.app/#intro - snap scroll
+-  https://www.d3indepth.com/force-layout/ - force layout 
+-  https://github.com/flowforfrank/d3-bubble - bubble- chart 
+-  
 
       
   
