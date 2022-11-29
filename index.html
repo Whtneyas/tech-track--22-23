@@ -1,62 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-     <link rel="icon" href="images/logodisney.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles/style.css">
-    <title>Tech-track Boilerplate App</title>
-  </head>
-  <body>
-<!-- This is the logo -->
-    <header>
-      
-      <!--TITEL-->
-     <h1>DISNEY MOVIES & TV SHOWS</h1>
-     <img src="images/logodisney.png" alt="">
-    
-     <!--RADIO BUTTONS FOR MOVIES AND TV-SHOWS-->
-     <form action="">
-      <input type="checkbox">
-      <label for="MOVIES">MOVIES </label>
 
-      <input type="checkbox">
-      <label for="TV-SHOWS">TV-SHOWS </label>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="images/logodisney.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/styles/style.css">
+  <title>Tech-track Boilerplate App</title>
+</head>
 
-     </form>
+<body>
+  
+  <header>
+    <!--TITEL-->
+    <h1>DISNEY MOVIES & TV SHOWS</h1>
+    <img class="logo" src="images/logodisney.png" alt="">
 
-     
-
-     <!--DROPDOWN MENU FOR GENRE -->
-    <label class="genre" for="">Choose a genre</label>
-
-      <select name="" id="">
-
-        <option value="Animation">Animation</option>
-        <option value="Adventure">Adventure</option>
-        <option value="Comedy">Comedy</option>
-        <option value="Drama">Drama</option>
-        <option value="Documentary">Documentary</option>
-        <option value="Family">Family</option>
-        <option value="Fantasy">Fantasy</option>
-        <option value="Musical">Musical</option>
-        <option value="Romance">Romance</option>
-
-      </select>
-    
+    <!--TIMELINE BUTTON-->
+    <div class="btn-group">
+      <button value="all">All</button>
+      <button value="1920-1929">1920 -1929</button>
+      <button value="1930-1939"> 1930-1939</button>
+      <button value="1940-1949">1940-1949</button>
+      <button value="1950-1959">1950-1960</button>
+      <button value="1960-1969">1960-1970</button>
+      <button value="1970-1979">1970-1979</button>
+      <button value="1980-1989">1980-1989</button>
+      <button value="1990-1999">1990-1999 </button>
+      <button value="2000-2009" >2010-2021</button>
+      <button value="2010-2021" >2010-2021</button>
+    </div>
 
   </header>
 
+  <main>
+    <!--BUBBLE-CHART-->
+    <!--Met svg heb ik een leg vorm gemaakt die ga ik later in de script.js file verwerken-->
+    <svg id="#bubble-chart"> </svg>
+    <div class="tooltip">
+    </div>
 
+  </main>
+  <script src="./scripts/bubble.js"></script>
+  <script type="module" src="./scripts/main.js"></script>
+  <script type="module" src="./scripts/slider.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
 
-    
-   
-   
+</body>
 
-    
-
-    <script type="module" src="./scripts/script.js"></script>
-    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
-    
-  </body>
 </html>

@@ -1,71 +1,71 @@
+html, body {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: #1B1464;
+  background-color:#0D0735;
   font-family: sans-serif;
 }
 
-header h1{
-  color:white;
+ h1 {
+  color:#0D0735 ;
   text-align: center;
-  text-decoration-line: underline;
   position: relative;
   top: 0.5em;
+  background-color: white;
+  margin-left : 2em;
 }
+
 header img {
   width: 150px;
   position: absolute;
-  top:0.3em;
- 
+  top: 0.3em;
 }
 
-header  label {
+/**TOOLTIP **/
+.tooltip {
+  position: absolute;
+  background: black;
   color:white;
+  font-family: sans-serif;
+  padding: 0.5em;
+  opacity: 0;
+  pointer-events: none;
+  width:20%;
+  height: 20%;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  justify-content: center;
+  padding-top: 2em;
+  ;
+}
+
+.btn-group button {
+  display: flex;
+  padding: .7em;
+  margin: 1em;
+}
+
+button {
+  background-color: #520099;
+  color:white;
+  border-radius: .7em;
+  border:none ;
+  box-shadow: 1px 1px 1px  white; 
+}
+
+button:hover{
+  color: #001F3F;
+  background-color: #fff;
+}
+
+svg  {
+  padding: -10;
 
 }
 
-header select option {
-  color: blue;
-}
 
-
-header form{
-  position: relative;
-  top:1.6em;
-  left:30em;
-  
-}
-
-form input[type="radio"]:checked {
-  appearance: none;
-    background-color: yellow;
-    border-radius: 50%;
-    border: 1px solid black;
-}
-
-form label {
-  padding:1em;
-}
-.genre {
-  position:relative;
-  top:.5em;
-  left:58em;
-}
-
-header select {
- position:absolute;
- top:8em;
- right: 5em;
-  
-}
-
-/**SLIDER **/
-.axis text,
-.slider text {
-  font-size: 18px;
-}
-
-.axis text {
-  fill: red;
-}
-.slider text {
-  fill: green;
-}
