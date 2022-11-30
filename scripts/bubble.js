@@ -1,4 +1,4 @@
-import * as d3 from "d3"; // Imports d3
+import * as d3 from 'd3'; // Imports d3
 import { gsap } from "gsap";
 
 let theData;
@@ -6,7 +6,7 @@ let theData;
 let dataSet = d3.json('../disney.json')
   .then(d => dataSet = d)
   .then(d => {
-    theData = d.filter(item => item.release_year >= "2023");
+    theData = d.filter(item => item.release_year >= "2021");
     drawChart(theData)
   })
   .catch(e => console.log("dataophalenmislukt"));
@@ -17,8 +17,8 @@ function drawChart(dataSet) {
   var simulation = d3.forceSimulation(dataSet)
     .force('charge', d3.forceManyBody().strength(5))
     .force('center', d3.forceCenter(width / 2, height / 2))
-    .force('collision', d3.forceCollide().radius(20))
-    .on('tick', ticked);  
+    .force('collision', d3.forceCollide().radius(22))
+    .on('tick', ticked);
 }
 // drawChart(selectie);
 
@@ -30,11 +30,12 @@ function ticked(updatedData) {
     .selectAll('circle')
     .data(updatedData || dataSet)
     .join('circle')
-    .attr('r', 5)
+    .attr('r', 20)
     .style('fill', '#00FFFF')
     .style('stroke', '#00FFFF')
     .attr('cx', d => d.x)
     .attr('cy', d => d.y)
+    
 
   //Text binnen de cirkels plaatsen
   d3.select('svg')
@@ -47,6 +48,7 @@ function ticked(updatedData) {
     .attr('text-anchor', 'middle')
     .attr('x', d => d.x)
     .attr('y', d => d.y)
+   
 
     //Hoverstate 
     .on("mouseover touchstart", (e, d) =>
@@ -76,20 +78,6 @@ function ticked(updatedData) {
     d3.select("#tooltip").style("opacity", 0));
 
 }
-
-
-// let zoom = d3.zoom()
-// .on('zoom', handleZoom)
-
-// function handleZoom(e){
-//   d3.select("circle")
-//   .attr('transform', e.transform);
-// }
-// function initZoom(){
-// d3.select('svg')
-//   .call(zoom);
-// }
-
 function dragstarted(d) {
   if (!d3.event.active) simulation.alphaTarget(.03).restart();
   d.fx = d.x;
@@ -105,25 +93,28 @@ function dragended(d) {
   d.fy = null;
 }
 
-function applyFilter(event) {
-  console.log(event.target.value)
 
-  if(event.target.value !== 'all') {
-    let range = event.target.value.split('-');
-    let newData = theData.filter(film => {
-      return film.release_year >= Number(range[0]) && film.release_year <= Number(range[1])
-    })
-    drawChart(newData);
-    // ticked(newData)
 
-    console.log(newData);
-  } else {
-    drawChart(theData)
-    // ticked(theData)
-  }
 
-}
+// function applyFilter(event) {
+//   console.log(event.target.value)
 
-window.addEventListener('DOMContentLoaded', () => {
-  d3.selectAll('button').on('click', applyFilter)
-})
+//   if(event.target.value !== 'all') {
+//     let range = event.target.value.split('-');
+//     let newData = theData.filter(film => {
+//       return film.listed_in >= Number(range[0]) && film.listed_in <= Number(range[1])
+//     })
+//     drawChart(newData);
+//     // ticked(newData)
+
+//     console.log(newData);
+//   } else {
+//     drawChart(theData)
+//     // ticked(theData)
+//   }
+
+// }
+
+// window.addEventListener('DOMContentLoaded', () => {
+//   d3.selectAll('button').on('click', applyFilter)
+//  })

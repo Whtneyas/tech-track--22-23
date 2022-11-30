@@ -8,11 +8,10 @@ body {
 }
 
  h1 {
-  color:#0D0735 ;
+  color:white;
   text-align: center;
   position: relative;
   top: 0.5em;
-  background-color: white;
   margin-left : 2em;
 }
 
