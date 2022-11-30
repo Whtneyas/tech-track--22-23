@@ -96,25 +96,29 @@ function dragended(d) {
 
 
 
-// function applyFilter(event) {
-//   console.log(event.target.value)
+function applyFilter(event) {
+  console.log(event.target.value)
+ let range,newData;
 
-//   if(event.target.value !== 'all') {
-//     let range = event.target.value.split('-');
-//     let newData = theData.filter(film => {
-//       return film.listed_in >= Number(range[0]) && film.listed_in <= Number(range[1])
-//     })
-//     drawChart(newData);
-//     // ticked(newData)
+  if(event.target.value !== 'all') {
+    range = event.target.value.split('-');
+    // console.log(theData)
+    newData = theData.filter(film => {
+      // return film.listed_in === Musical(range[0]) && film.listed_in <= Number(range[1])
+      return film.listed_in === "Musical"
 
-//     console.log(newData);
-//   } else {
-//     drawChart(theData)
-//     // ticked(theData)
-//   }
+    })
+    drawChart(newData);
+    // ticked(newData)
 
-// }
+    console.log(newData);
+  } else {
+    drawChart(theData)
+    // ticked(theData)
+  }
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   d3.selectAll('button').on('click', applyFilter)
-//  })
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  d3.selectAll('button').on('click', applyFilter)
+ })
