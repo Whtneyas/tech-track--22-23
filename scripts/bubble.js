@@ -36,7 +36,7 @@ var width = window.innerWidth,height = 550
       .transition()
       .duration(175)
       .style("opacity", 1)
-      .text(`${d.title}${d.description}${d.type}`)  
+      .text(`${d.title}${d.description}${d.type}`)
       .attr('cx', d => d.x)
       .attr('cy', d => d.y)
     )
