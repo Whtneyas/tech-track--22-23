@@ -11,7 +11,6 @@ let dataSet = d3.json('../disney.json')
   })
   .catch(e => console.log("dataophalenmislukt"));
 
-  
 // de layout van de bubble creeeren
 function drawChart(dataSet) {
 var width = window.innerWidth,height = 550
