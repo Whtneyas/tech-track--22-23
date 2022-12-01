@@ -1,13 +1,15 @@
 html, body {
   box-sizing: border-box;
 }
-
 body {
   background-color:#0D0735;
   font-family: sans-serif;
 }
 
- h1 {
+header {
+  margin-bottom: 3px solid white;
+}
+ header h1 {
   color:white;
   text-align: center;
   position: relative;
@@ -62,9 +64,5 @@ button:hover{
   background-color: #fff;
 }
 
-svg  {
-  padding: -10;
-
-}
 
 
