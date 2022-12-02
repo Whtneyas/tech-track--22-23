@@ -1,13 +1,17 @@
 Tech-track--22-23
 Project tech datavisualisatie
+<img width="881" alt="image" src="https://user-images.githubusercontent.com/90154152/205267502-a25c5e77-5203-4115-86e7-7f4c26506a97.png">
+
 
 
 ## Installation
 
 ## Packages installed 
-*D3 - For creating interactive data visualisations in the web browser 
-*Simple Slider - A slider 
-*Gsap -For animation
+* D3 - For creating interactive data visualisations in the web browser 
+
+* Simple Slider - A slider 
+
+* Gsap -For animation
 
 
 ## Cloning
@@ -37,7 +41,10 @@ MIT LICENCE
 -  https://oh-snap.netlify.app/#intro - snap scroll
 -  https://www.d3indepth.com/force-layout/ - force layout 
 -  https://github.com/flowforfrank/d3-bubble - bubble- chart 
--  
+-  https://www.netlify.com/ - Deploying 
+-  https://vercel.com/dashboard - Deploying 
+
+
 
       
   
