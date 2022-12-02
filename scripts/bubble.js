@@ -29,6 +29,7 @@ var width = window.innerWidth,height = 550
       .attr('r', 20)
       .style('fill', '#00FFFF')
 
+  // Maak een tooltip aan
     .on("mouseover touchstart", (e, d) =>
       d3
       .select(".tooltip")
@@ -67,7 +68,7 @@ function ticked() {
 
 function applyFilter(event) {
   // console.log(event.target.value)
- let range,newData;
+ let newData;
 
   if(event.target.value !== 'all') {
     // console.log(theData)
