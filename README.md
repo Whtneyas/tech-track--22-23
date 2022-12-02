@@ -37,7 +37,10 @@ MIT LICENCE
 -  https://oh-snap.netlify.app/#intro - snap scroll
 -  https://www.d3indepth.com/force-layout/ - force layout 
 -  https://github.com/flowforfrank/d3-bubble - bubble- chart 
--  
+-  https://www.netlify.com/ - Deploying 
+-  https://vercel.com/dashboard - Deploying 
+
+
 
       
   
