@@ -10,7 +10,7 @@ gsap.from(logo,{
 
 let theData;
 
-let dataSet = d3.json('../disney.json')
+let dataSet = d3.json('./disney.json')
   .then(d => dataSet = d)
   .then(d => {
     theData = d.filter(item => item.release_year >= "2021");
